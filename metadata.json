@@ -1,0 +1,6 @@
+{
+  "name": "Bill Filling & Invoice Generator",
+  "description": "Professional invoice and bill filling tool with custom branding, PDF export, and automated email delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
