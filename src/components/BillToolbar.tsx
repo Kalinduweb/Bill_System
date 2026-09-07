@@ -13,6 +13,7 @@ import {
   FileCheck2,
   CheckCircle2,
 } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface BillToolbarProps {
   onExportPdf: (paperSize: 'a4' | 'a5') => void;
@@ -114,6 +115,9 @@ export const BillToolbar: React.FC<BillToolbarProps> = ({
 
         {/* Right: Primary Action Buttons */}
         <div className="flex items-center gap-2">
+          {/* PWA Install Trigger */}
+          <PWAInstallButton />
+
           {/* Branding Settings */}
           <button
             type="button"

@@ -8,6 +8,7 @@ import { BrandingSettingsModal } from './components/BrandingSettingsModal';
 import { EmailDeliveryModal } from './components/EmailDeliveryModal';
 import { EmailHistoryDrawer } from './components/EmailHistoryDrawer';
 import { SavedInvoicesModal } from './components/SavedInvoicesModal';
+import { OfflineIndicator } from './components/OfflineIndicator';
 import { exportBillToPdf } from './utils/billUtils';
 import { Sparkles, CheckCircle2, AlertCircle, FileText, Info } from 'lucide-react';
 
@@ -335,6 +336,9 @@ export default function App() {
           <span>{toastMessage}</span>
         </div>
       )}
+
+      {/* Offline Status & Connectivity Indicator */}
+      <OfflineIndicator />
     </div>
   );
 }
